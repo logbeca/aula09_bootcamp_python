@@ -1,0 +1,56 @@
+2025-01-16T14:58:51.852904-0300 INFO Chamando função 'soma' com args (2, '1') e kwargs {} log.py
+2025-01-16T14:58:51.852904-0300 ERROR Exceção capturada em 'soma': unsupported operand type(s) for +: 'int' and 'str' log.py
+Traceback (most recent call last):
+
+  File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\exemplo00.py", line 14, in <module>
+    soma(2,"1")
+    └ <function soma at 0x0000026EFAF0CA40>
+
+> File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\log.py", line 24, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (2, '1')
+             └ <function soma at 0x0000026EFAC304A0>
+
+  File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\exemplo00.py", line 8, in soma
+    soma = x +y
+           │  └ '1'
+           └ 2
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2025-01-16T15:01:20.626070-0300 INFO Chamando função 'soma' com args (2, '1') e kwargs {} utils_log.py
+2025-01-16T15:01:20.628075-0300 ERROR Exceção capturada em 'soma': unsupported operand type(s) for +: 'int' and 'str' utils_log.py
+Traceback (most recent call last):
+
+  File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\exemplo00.py", line 14, in <module>
+    soma(2,"1")
+    └ <function soma at 0x000002198390E520>
+
+> File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\utils_log.py", line 24, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (2, '1')
+             └ <function soma at 0x00000219835B04A0>
+
+  File "C:\Users\ACER\Desktop\Rebeca\aula09_bootcamp_python\exemplo00.py", line 8, in soma
+    soma = x +y
+           │  └ '1'
+           └ 2
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2025-01-16T15:04:05.286093-0300 INFO Chamando função 'soma' com args (2, '1') e kwargs {} utils_log.py
+2025-01-16T15:04:05.286093-0300 INFO Função 'soma' retornou 3 utils_log.py
+2025-01-16T15:04:05.286093-0300 INFO Chamando função 'soma' com args (2, 8) e kwargs {} utils_log.py
+2025-01-16T15:04:05.286093-0300 INFO Função 'soma' retornou 10 utils_log.py
+2025-01-16T15:38:11.039168-0300 INFO Chamando função 'soma' com args (2, '1') e kwargs {} utils_log.py
+2025-01-16T15:38:11.041166-0300 INFO Função 'soma' executada em 0.0000 segundos time_decorator.py
+2025-01-16T15:38:11.043163-0300 INFO Função 'soma' retornou 3 utils_log.py
+2025-01-16T15:38:11.044700-0300 INFO Chamando função 'soma' com args (2, 8) e kwargs {} utils_log.py
+2025-01-16T15:38:11.046702-0300 INFO Função 'soma' executada em 0.0000 segundos time_decorator.py
+2025-01-16T15:38:11.049969-0300 INFO Função 'soma' retornou 10 utils_log.py
+2025-01-16T15:40:54.661100-0300 INFO Chamando função 'soma' com args (2, '1') e kwargs {} utils_log.py
+2025-01-16T15:40:54.664105-0300 INFO Função 'soma' executada em 0.0010 segundos time_decorator.py
+2025-01-16T15:40:54.666100-0300 INFO Função 'soma' retornou 3 utils_log.py
+2025-01-16T15:40:54.667101-0300 INFO Chamando função 'soma' com args (2, 8) e kwargs {} utils_log.py
+2025-01-16T15:40:54.669103-0300 INFO Função 'soma' executada em 0.0000 segundos time_decorator.py
+2025-01-16T15:40:54.677104-0300 INFO Função 'soma' retornou 10 utils_log.py
